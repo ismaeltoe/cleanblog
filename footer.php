@@ -8,7 +8,7 @@
                         <?php dynamic_sidebar( 'sidebar-1' ); ?>
                     </ul>
                     <?php endif; ?>
-                    <p class="copyright text-muted"><?php _e( 'Powered By WordPress and', TDOMAIN ); ?> <a href="http://wordpress.org/themes/cleanblog">Clean Blog</a></p>
+                    <p class="copyright text-muted"><?php _e( 'Powered By WordPress and', TDOMAIN ); ?> <a href="http://ismaeltoe.com">Clean Blog</a></p>
                 </div>
             </div>
         </div>

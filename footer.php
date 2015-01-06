@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package Clean Blog
+ */
+?>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -8,25 +17,13 @@
                         <?php dynamic_sidebar( 'sidebar-1' ); ?>
                     </ul>
                     <?php endif; ?>
-                    <p class="copyright text-muted"><?php _e( 'Powered By WordPress and', TDOMAIN ); ?> <a href="https://github.com/ismaeltoe/cleanblog/">Clean Blog</a></p>
+                    <p class="copyright text-muted"><?php _e( 'Powered By WordPress and', 'cleanblog' ); ?> <a href="https://github.com/ismaeltoe/cleanblog/">Clean Blog</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-
-    <?php if ( is_page_template( 'page-templates/contact.php' ) ) : ?>
-    <!-- Custom Theme JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/clean-blog.min.js"></script>
-    <?php endif; ?>
-
     <?php wp_footer(); ?>
 
 </body>
-
 </html>

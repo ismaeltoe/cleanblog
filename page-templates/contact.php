@@ -34,22 +34,22 @@ get_header(); ?>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label><?php _e( 'Name', TDOMAIN ); ?></label>
-                            <input type="text" class="form-control" placeholder="<?php _e( 'Name', TDOMAIN ); ?>" id="name" required data-validation-required-message="<?php _e( 'Please enter your name.', TDOMAIN ); ?>">
+                            <label><?php _e( 'Name', 'cleanblog' ); ?></label>
+                            <input type="text" class="form-control" placeholder="<?php _e( 'Name', 'cleanblog' ); ?>" id="name" required data-validation-required-message="<?php _e( 'Please enter your name.', 'cleanblog' ); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label><?php _e('Email Address', TDOMAIN ); ?></label>
-                            <input type="email" class="form-control" placeholder="<?php _e('Email Address', TDOMAIN ); ?>" id="email" required data-validation-required-message="<?php _e( 'Please enter your email address.', TDOMAIN ); ?>">
+                            <label><?php _e('Email Address', 'cleanblog' ); ?></label>
+                            <input type="email" class="form-control" placeholder="<?php _e('Email Address', 'cleanblog' ); ?>" id="email" required data-validation-required-message="<?php _e( 'Please enter your email address.', 'cleanblog' ); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label><?php _e( 'Message', TDOMAIN ); ?></label>
-                            <textarea rows="5" class="form-control" placeholder="<?php _e( 'Message', TDOMAIN ); ?>" id="message" required data-validation-required-message="<?php _e( 'Please enter a message.', TDOMAIN ); ?>"></textarea>
+                            <label><?php _e( 'Message', 'cleanblog' ); ?></label>
+                            <textarea rows="5" class="form-control" placeholder="<?php _e( 'Message', 'cleanblog' ); ?>" id="message" required data-validation-required-message="<?php _e( 'Please enter a message.', 'cleanblog' ); ?>"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ get_header(); ?>
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default"><?php _e( 'Send', TDOMAIN ); ?></button>
+                            <button type="submit" class="btn btn-default"><?php _e( 'Send', 'cleanblog' ); ?></button>
                         </div>
                     </div> 
                 </form>

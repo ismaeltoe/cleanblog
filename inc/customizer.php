@@ -9,7 +9,7 @@ function cleanblog_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section( 'contact_page', array(
 		'title'       => __( 'Contact Page', 'cleanblog' ),
-		'description' => __( "Add your email address where the form will send a message to. Create a page and set the page template to 'Contact Page'. WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally!", TDOMAIN ),
+		'description' => __( "Add your email address where the form will send a message to. Create a page and set the page template to 'Contact Page'. WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally!", 'cleanblog' ),
 		'priority' => 1
 	) );
 

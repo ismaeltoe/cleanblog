@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 750; /* pixels */
 }
 
-if ( ! function_exists( 'clean_blog_setup' ) ) :
+if ( ! function_exists( 'cleanblog_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,7 +20,7 @@ if ( ! function_exists( 'clean_blog_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function clean_blog_setup() {
+function cleanblog_setup() {
 
 	/*
 	 * Make theme available for translation.
@@ -70,37 +70,37 @@ function clean_blog_setup() {
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
 }
-endif; // clean_blog_setup
-add_action( 'after_setup_theme', 'clean_blog_setup' );
+endif; // cleanblog_setup
+add_action( 'after_setup_theme', 'cleanblog_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function clean_blog_widgets_init() {
+function cleanblog_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
-	register_widget( 'Clean_Blog_Social_Widget' );
+	register_widget( 'CleanBlog_Social_Widget' );
 
 	register_sidebar( array(
 		'name'          => __( 'Social Widget Area', 'cleanblog' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Display Social icons in the footer section of the site. Drag only "Clean Blog Social" widget here.', TDOMAIN ),
+		'description'   => __( 'Display Social icons in the footer section of the site. Drag only "Clean Blog Social" widget here.', 'cleanblog' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
 }
-add_action( 'widgets_init', 'clean_blog_widgets_init' );
+add_action( 'widgets_init', 'cleanblog_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function clean_blog_scripts() {
+function cleanblog_scripts() {
 	wp_enqueue_style( 'cleanblog-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
-	wp_enqueue_style( 'clean-blog-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'cleanblog-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'cleanblog-font-awesome-style', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
@@ -120,7 +120,7 @@ function clean_blog_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'clean_blog_scripts' );
+add_action( 'wp_enqueue_scripts', 'cleanblog_scripts' );
 
 /**
  * Implement the Custom Header feature.

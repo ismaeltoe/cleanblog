@@ -9,7 +9,7 @@
  * 
  */
 
-class Clean_Blog_Social_Widget extends WP_Widget {
+class CleanBlog_Social_Widget extends WP_Widget {
 
 	private $socials = array( 
 		'android', 
@@ -30,9 +30,9 @@ class Clean_Blog_Social_Widget extends WP_Widget {
 	 * Sets up the widgets name etc
 	 */
 	public function __construct() {
-		parent::__construct( 'widget_cleanblog_social', __( 'Clean Blog Social', TDOMAIN ), array(
+		parent::__construct( 'widget_cleanblog_social', __( 'Clean Blog Social', 'cleanblog' ), array(
 			'classname'   => 'widget_cleanblog_social',
-			'description' => __( 'Use this widget to display your social profiles links.', TDOMAIN ),
+			'description' => __( 'Use this widget to display your social profiles links.', 'cleanblog' ),
 		) );
 	}
 
@@ -68,18 +68,18 @@ class Clean_Blog_Social_Widget extends WP_Widget {
 		$social = isset( $instance['social'] ) && in_array( $instance['social'], $this->socials ) ? $instance['social'] : '';
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', TDOMAIN ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'cleanblog' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'social' ) ); ?>"><?php _e( 'Social Network to show:', TDOMAIN ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'social' ) ); ?>"><?php _e( 'Social Network to show:', 'cleanblog' ); ?></label>
 			<select id="<?php echo esc_attr( $this->get_field_id( 'social' ) ); ?>" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'social' ) ); ?>">
 				<?php foreach ( $this->socials as $slug ) : ?>
 				<option value="<?php echo esc_attr( $slug ); ?>"<?php selected( $social, $slug ); ?>><?php echo $slug; ?></option>
 				<?php endforeach; ?>
 			</select>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php _e( 'Your Profile/Wall/Site Link:', TDOMAIN ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php _e( 'Your Profile/Wall/Site Link:', 'cleanblog' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text" value="<?php echo esc_attr( $link ); ?>">
 		</p>
 <?php

@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all single posts.
+ *
+ * @package Clean Blog
+ */
+
+get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 

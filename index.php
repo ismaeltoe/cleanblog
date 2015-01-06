@@ -48,7 +48,7 @@ get_header(); ?>
 
                     <?php endwhile; ?>
 
-                    <?php cleanblog_content_nav(); ?>
+                    <?php cleanblog_paging_nav(); ?>
 
                 <?php else : ?>
 

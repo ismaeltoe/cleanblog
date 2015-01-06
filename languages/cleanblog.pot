@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: customizer-boilerplate/options.php:49
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-17 16:18+0000\n"
+"POT-Creation-Date: 2015-01-06 19:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,111 +18,100 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: 404.php:9
-msgid "Not Found"
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:21
+#: 404.php:28
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: comments.php:24
+#: 404.php:36
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:53
 #, php-format
-msgid "One comment on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:31 comments.php:48
+#: comments.php:35 comments.php:52
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36 comments.php:53
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:32 comments.php:49
+#: comments.php:37 comments.php:54
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:54
+#: comments.php:64
 msgid "Comments are closed."
 msgstr ""
 
-#: content-page.php:27 content-single.php:28
-msgid "Pages:"
-msgstr ""
-
-#: content-page.php:33 content-single.php:46 content.php:11
-msgid "Edit"
-msgstr ""
-
-#: content-single.php:13 content.php:8
-msgid "Posted by"
-msgstr ""
-
-#: content-single.php:13 content.php:8
-msgid "on"
-msgstr ""
-
-#: content-single.php:39
-msgid "Tags: "
-msgstr ""
-
-#: footer.php:11
-msgid "Powered By WordPress and"
-msgstr ""
-
-#: functions.php:17
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:42
-msgid "Older Posts &rarr;"
-msgstr ""
-
-#: functions.php:46
-msgid "&larr; Newer Posts"
-msgstr ""
-
-#: functions.php:84
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#: functions.php:96
-msgid "Social Widget Area"
-msgstr ""
-
-#: functions.php:98
-msgid ""
-"Display Social icons in the footer section of the site. Drag only \"Clean "
-"Blog Social\" widget here."
-msgstr ""
-
-#: header.php:43
-msgid "Toggle navigation"
-msgstr ""
-
-#: index.php:31
+#: content-none.php:13
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: index.php:35
+#: content-none.php:17
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: index.php:40
+#: content-none.php:22
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: customizer-boilerplate/options.php:38
+#: content-page.php:35 content-single.php:34
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:39 content.php:21 inc/template-tags.php:96
+msgid "Edit"
+msgstr ""
+
+#: footer.php:20
+msgid "Powered By WordPress and"
+msgstr ""
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:86
+msgid "Social Widget Area"
+msgstr ""
+
+#: functions.php:88
+msgid ""
+"Display Social icons in the footer section of the site. Drag only \"Clean "
+"Blog Social\" widget here."
+msgstr ""
+
+#: header.php:36
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/customizer.php:11
 msgid "Contact Page"
 msgstr ""
 
-#: customizer-boilerplate/options.php:39
+#: inc/customizer.php:12
 msgid ""
 "Add your email address where the form will send a message to. Create a page "
 "and set the page template to 'Contact Page'. WARNING: Some web hosts do not "
@@ -133,8 +121,163 @@ msgid ""
 "form will not work locally!"
 msgstr ""
 
-#: customizer-boilerplate/options.php:57
+#: inc/customizer.php:24
 msgid "Your Email Address"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Older Posts &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:31
+msgid "&larr; Newer Posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:61
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:78 inc/template-tags.php:84
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:80
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:86
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:92
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:92
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:92
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:113
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:115
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:117
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:119
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:121
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:121
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:123
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:123
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:126
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:128
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:130
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:132
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:134
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:136
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:138
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:142
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:145
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:151
+msgid "Archives"
 msgstr ""
 
 #: inc/widgets.php:33

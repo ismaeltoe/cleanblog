@@ -104,9 +104,9 @@ function cleanblog_scripts() {
 
 	wp_enqueue_style( 'cleanblog-font-awesome-style', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
-	wp_enqueue_style( 'cleanblog-font-lora', 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' );
+	wp_enqueue_style( 'cleanblog-font-lora', 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', array(), null );
 
-	wp_enqueue_style( 'cleanblog-font-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' );
+	wp_enqueue_style( 'cleanblog-font-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array(), null );
 
 	wp_enqueue_script( 'cleanblog-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '', true );
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-06 19:04+0000\n"
+"POT-Creation-Date: 2015-01-07 17:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,20 @@ msgstr ""
 msgid ""
 "Display Social icons in the footer section of the site. Drag only \"Clean "
 "Blog Social\" widget here."
+msgstr ""
+
+#: functions.php:118
+msgid "Your message has been sent."
+msgstr ""
+
+#: functions.php:119
+msgid ""
+"Sorry, it seems that my mail server is not responding. Please try again "
+"later!"
+msgstr ""
+
+#: functions.php:122
+msgid "Not a valid email address"
 msgstr ""
 
 #: header.php:36

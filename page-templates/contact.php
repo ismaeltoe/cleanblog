@@ -12,7 +12,7 @@ get_header(); ?>
         <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( '1900', '9999' ) ); ?>
         <header class="intro-header" style="background-image: url('<?php echo $image_url[0]; ?>')">
     <?php else : ?>
-        <header class="intro-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/home-bg.jpg')">
+        <header class="intro-header" style="background-image: url('<?php header_image(); ?>')">
     <?php endif; ?>
         <div class="container">
             <div class="row">

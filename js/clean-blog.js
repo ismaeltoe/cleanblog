@@ -1,6 +1,6 @@
 // Contact Form Scripts
 
-$(function() {
+jQuery(document).ready(function($) {
 
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -81,7 +81,7 @@ $('#name').focus(function() {
  // * http://ReactiveRaven.github.com/jqBootstrapValidation/
  
 
-(function( $ ){
+(function($){
 
 	var createdElements = [];
 
@@ -982,10 +982,10 @@ $('#name').focus(function() {
     $(":input").not("[type=image],[type=submit]").jqBootstrapValidation.apply(this,arguments);
   };
 
-})( jQuery );
+})(jQuery);
 
 // Floating label headings for the contact form
-$(function() {
+(function($) {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
     }).on("focus", ".floating-label-form-group", function() {
@@ -993,7 +993,7 @@ $(function() {
     }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
-});
+})(jQuery);
 
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {

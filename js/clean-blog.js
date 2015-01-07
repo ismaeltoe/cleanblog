@@ -1,4 +1,7 @@
-/* global cleanBlogLocalizeJs */
+/* 
+global contactMessage
+global validatorMessage
+*/
 
 // Contact Form Scripts
 
@@ -37,7 +40,7 @@ jQuery(document).ready(function($) {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append(contactMessage.success);
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -49,7 +52,7 @@ jQuery(document).ready(function($) {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append(cleanBlogLocalizeJs.failMessage);
+                    $('#success > .alert-danger').append(contactMessage.fail);
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -258,7 +261,7 @@ $('#name').focus(function() {
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
+              message = validatorMessage.email;
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {

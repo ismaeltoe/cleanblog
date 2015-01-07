@@ -114,8 +114,12 @@ function cleanblog_scripts() {
 
 	if ( is_page_template( 'page-templates/contact.php' ) ) {
 		wp_enqueue_script( 'cleanblog-js', get_template_directory_uri() . '/js/clean-blog.js', array(), '20150107', true );
-		wp_localize_script( 'cleanblog-js', 'cleanBlogLocalizeJs', array(
-			'failMessage'   => '<strong>' . __( 'Sorry, it seems that my mail server is not responding. Please try again later!', 'cleanblog' ) . '</strong>',
+		wp_localize_script( 'cleanblog-js', 'contactMessage', array(
+			'success'	=> '<strong>' . __( 'Your message has been sent.', 'cleanblog' ) . '</strong>',
+			'fail'		=> '<strong>' . __( 'Sorry, it seems that my mail server is not responding. Please try again later!', 'cleanblog' ) . '</strong>',
+		) );
+		wp_localize_script( 'cleanblog-js', 'validatorMessage', array(
+			'email'		=> __( 'Not a valid email address', 'cleanblog' ),
 		) );
 	}
 

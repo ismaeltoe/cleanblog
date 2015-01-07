@@ -98,22 +98,25 @@ add_action( 'widgets_init', 'cleanblog_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cleanblog_scripts() {
-	wp_enqueue_style( 'cleanblog-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'cleanblog-bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.0' );
 
 	wp_enqueue_style( 'cleanblog-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'cleanblog-font-awesome-style', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'cleanblog-font-awesome-style', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), null );
 
 	wp_enqueue_style( 'cleanblog-font-lora', 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', array(), null );
 
 	wp_enqueue_style( 'cleanblog-font-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array(), null );
 
-	wp_enqueue_script( 'cleanblog-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '', true );
+	wp_enqueue_script( 'cleanblog-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '2.1.1', true );
 
-	wp_enqueue_script( 'cleanblog-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '', true );
+	wp_enqueue_script( 'cleanblog-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.0', true );
 
 	if ( is_page_template( 'page-templates/contact.php' ) ) {
-		wp_enqueue_script( 'cleanblog-js', get_template_directory_uri() . '/js/clean-blog.js', array(), '', true );
+		wp_enqueue_script( 'cleanblog-js', get_template_directory_uri() . '/js/clean-blog.js', array(), '20150107', true );
+		wp_localize_script( 'cleanblog-js', 'cleanBlogLocalizeJs', array(
+			'failMessage'   => '<strong>' . __( 'Sorry, it seems that my mail server is not responding. Please try again later!', 'cleanblog' ) . '</strong>',
+		) );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
